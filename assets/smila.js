@@ -49,11 +49,11 @@
           show("Дякуємо! Повідомлення надіслано — ми зв'яжемося з вами протягом робочого дня.", false);
         } else {
           var msg = res.d && res.d.errors ? res.d.errors.map(function (x) { return x.message; }).join(', ') : '';
-          show('Не вдалося надіслати' + (msg ? ': ' + msg : '') + '. Спробуйте ще раз або напишіть на energy@glosterinvestment.group', true);
+          show('Не вдалося надіслати' + (msg ? ': ' + msg : '') + '. Спробуйте ще раз або напишіть на tovsmila5@gmail.com', true);
         }
       })
       .catch(function () {
-        show("Немає з'єднання з сервером. Спробуйте ще раз або напишіть на energy@glosterinvestment.group", true);
+        show("Немає з'єднання з сервером. Спробуйте ще раз або напишіть на tovsmila5@gmail.com", true);
       })
       .then(function () {
         btn.disabled = false;
